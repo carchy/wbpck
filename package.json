@@ -1,0 +1,22 @@
+{
+  "name": "jtwebpack",
+  "version": "1.0.0",
+  "description": "pratice  webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "carchy",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
