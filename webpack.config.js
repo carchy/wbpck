@@ -30,7 +30,23 @@ let _cfg={
               'style-loader',
               'css-loader',
             ],
+          },
+          //yarn add  --dev file-loader
+          {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+              'file-loader',
+            ],
+          },
+          {
+            test: /\.(woff|woff2|eot|ttf|otf)$/,
+            use: [
+              'file-loader',
+            ],
           }
+          //yarn add  --dev csv-loader xml-loader
+
+   
         ],
       },
    
