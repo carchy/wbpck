@@ -3,27 +3,24 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path')
 /**@type {webpack.Configuration} */
 let _cfg = {
-  mode: 'development',
-  target:'web',
+  mode: 'production',
+
   entry: {
-    //'jss/main1': './src/main1.js',
-    //'js4/main4': './src/js/main4.js',
-    'min/all.js':['./src/main2.js','./src/main3.js','./src/js/main4.js']
+    'min/all.js': ['./src/main1.js'],
+    'js4/main4': './src/js/main4.js'
   },
   output: {
-    library:'mylib',
-    libraryTarget:'amd',
     filename: 'js/[name].js',
     path: path.resolve(__dirname, './dist'),
     chunkFilename:'jschunk/chunck.js'
   },
   plugins: [
 
-    // new HtmlWebpackPlugin({
-    //   filename: 'pages/index.html',
-    //   template: 'src/index.html',
-    //   chunks: ['jss/main1']
-    // })
+    new HtmlWebpackPlugin({
+      filename: 'pages/index.html',
+      template: 'src/index.html',
+      chunks: ['jss/main1']
+    })
   ],
   module: {
     rules: [
@@ -72,4 +69,5 @@ let _cfg = {
     },
 
 }
+
 module.exports = _cfg
