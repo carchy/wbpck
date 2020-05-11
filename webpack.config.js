@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import  HtmlWebpackPlugin from 'html-webpack-plugin';
 const path = require('path')
 /**@type {import 'webpack'.Configuration} */
 let _cfg = {
@@ -14,7 +13,7 @@ let _cfg = {
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, './dist'),
-    chunkFilename: 'jschunk/chunck.js'
+    chunkFilename: 'jschunk/chunk.[contenthash].js'
     
 
   },
@@ -129,11 +128,9 @@ let _cfg = {
       chunks: 'all'
     }
   }
-
 }
 module.exports = _cfg
 /**@typedef {import 'webpack'}  wbpk */
-
 let sss
 
 

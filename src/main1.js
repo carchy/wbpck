@@ -7,7 +7,7 @@ document.write('<h1>bundle1/h1>');
 main2()
 main3()
 
-// $('body').addClass('my=class')
-// import('./js/main4.js').then(
-//     (module)=>module()
-// );
+$('body').addClass('my=class')
+import('./js/main4.js').then(
+    (module)=>module()
+);
