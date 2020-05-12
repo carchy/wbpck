@@ -12,6 +12,7 @@
   "author": "carchy",
   "license": "ISC",
   "dependencies": {
+    "@carchy/jtlib": "^1.0.2",
     "@types/source-map": "^0.5.7",
     "@types/webpack": "^4.41.12",
     "jquery": "^3.5.1",
